@@ -1,7 +1,5 @@
 const queryString = window.location.search;
 let slicedQuery = queryString.slice(1,)
-console.log(slicedQuery);
-
 let loadScreen = document.querySelector('.loadingScreen')
 let notfBtn = document.querySelector('.notfBtn')
 
@@ -59,10 +57,7 @@ for(let i =0 ; i < catgLi.length ;i++){
                 if (         window.location.href == "file:///C:/ecommerceVanillaJs/home.html"
         ) {
             window.location.href = `file:///C:/ecommerceVanillaJs/categories.html?${e.target.innerHTML}`;        }
-        else {
-
-            window.location.href = `https://sarahheshamali2.github.io/EcommerceVanilla?${e.target.innerHTML}`
-        }
+    
 
     })
 }
