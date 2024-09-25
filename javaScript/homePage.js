@@ -209,7 +209,6 @@ let catgLi = document.querySelectorAll('.catg li')
 
 
 
-
 for(let i =0 ; i < catgLi.length ;i++){
     catgLi[i].addEventListener('click', function(e){
                 if (         window.location.href == "file:///C:/ecommerceVanillaJs/home.html"
@@ -217,9 +216,8 @@ for(let i =0 ; i < catgLi.length ;i++){
             window.location.href = `file:///C:/ecommerceVanillaJs/categories.html?${e.target.innerHTML}`;        }
         else {
 
-            window.location.href == 'https://sarahheshamali2.github.io/EcommerceVanilla/home'
+            window.location.href = `https://sarahheshamali2.github.io/EcommerceVanilla?${e.target.innerHTML}`
         }
-        window.location.href = `https://sarahheshamali2.github.io/EcommerceVanilla?${e.target.innerHTML}`;
 
     })
 }
