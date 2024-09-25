@@ -117,13 +117,22 @@ let newUser = {
 }
 
 
+
+
 if(validatePassword(myPassword.value) && validateEmail (emailField.value)) {
      localStorage.setItem('user',JSON.stringify(newUser))
     loadingButton.classList.remove('d-none')
     signInBtn.classList.add('d-none')
 
      setTimeout(() => {
-        window.location.href = "file:///C:/ecommerceVanillaJs/home.html";
+        if (         window.location.href == "file:///C:/ecommerceVanillaJs/home.html"
+        ) {
+            window.location.href = "file:///C:/ecommerceVanillaJs/home.html"
+        }
+        else {
+
+            window.location.href = 'https://sarahheshamali2.github.io/EcommerceVanilla/home'
+        }
 
      }, 2000);
 
@@ -149,3 +158,4 @@ else {
 
 
 
+    console.log(window.location.href);
