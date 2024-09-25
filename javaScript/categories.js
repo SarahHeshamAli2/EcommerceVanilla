@@ -57,7 +57,9 @@ for(let i =0 ; i < catgLi.length ;i++){
                 if (         window.location.href == "file:///C:/ecommerceVanillaJs/home.html"
         ) {
             window.location.href = `file:///C:/ecommerceVanillaJs/categories.html?${e.target.innerHTML}`;        }
-    
+            else {
+                window.location.href = "file:///C:/ecommerceVanillaJs/home.html"
+           }
 
     })
 }
