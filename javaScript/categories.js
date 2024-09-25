@@ -1,5 +1,7 @@
 const queryString = window.location.search;
 let slicedQuery = queryString.slice(1,)
+console.log(slicedQuery);
+
 let loadScreen = document.querySelector('.loadingScreen')
 let notfBtn = document.querySelector('.notfBtn')
 
