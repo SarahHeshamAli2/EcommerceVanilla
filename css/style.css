@@ -1,0 +1,392 @@
+.user {
+    background-color: #ffff;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+    .icon {
+        background-color: #EFE2DA;
+    }
+
+    .indexBody ,nav {
+        background-color: #FAACA8;
+        background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+        
+    }
+.ourPrivacy , .passwordError , .emailError{
+    font-size: 0.75rem;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.redBorder {
+    box-shadow: 0 0 0 .25rem rgba(253, 13, 13, 0.25) !important;
+    border-color: red !important;
+}
+
+.greenBorder {
+    box-shadow: 0 0 0 .25rem rgba(33, 145, 14, 0.25) !important;
+    border-color: rgb(6, 89, 6) !important;
+}
+
+
+
+
+.discount {
+    font-size: 0.75rem;
+}
+
+#homeProductsRow a{
+color: black;
+}
+
+.logo {
+    width: 45px;
+}
+.innerColumn a {
+    color: #413f3f;
+    cursor: pointer;
+}
+.innerColumn a:hover {
+    color: #030303;
+}
+li {
+    color: #b4b2b2 ;
+    transition: 0.25s all;
+}
+.innerCol li:hover  {
+    color: #f0f0f0;
+}
+
+
+
+
+.productAddSucc {
+    position: sticky;
+    bottom: 50%;
+}
+.productImg {
+    height: 270px;
+}
+
+.boxShadow {
+    -webkit-box-shadow: 1px 1px 11px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 11px -6px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 11px -6px rgba(0,0,0,0.75);
+}
+
+.btnDisabled {
+    background-color: #cccccc !important;
+    color: #666666 !important;
+    border: 1px solid #999999 !important;
+
+}
+
+.loadingScreen {
+    z-index: 999;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid;
+    border-color: #000 #0000;
+    animation: l1 1s infinite;
+
+  }
+
+  @keyframes l1 {to{transform: rotate(.5turn)}}
+
+
+  
+.signIn {
+    z-index: 999999;
+}
+
+.productDet {
+   
+    position: relative;
+    background-color: white;
+    border-radius: 75px;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+}
+
+
+.productDet:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .productDet:hover::before, .productDet:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FDA8CF;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .productDet:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;    
+    }
+  }
+
+  .logOutBtn , .catg li {
+cursor: pointer;
+  }
+
+
+
+
+.card-top a{
+    float: left;
+    margin-top: 0.7rem;
+}
+#logo{
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.card-body{
+    padding: 0 5rem 5rem 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media(max-width:768px){
+    .card-body{
+        padding: 0 1rem 1rem 1rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }  
+    .card-top{
+        padding: 0.7rem 1rem;
+    }
+}
+.row{
+    margin: 0;
+}
+.upper{
+    padding: 1rem 0;
+    justify-content: space-evenly;
+}
+#three{
+    border-radius: 1rem;
+        width: 22px;
+    height: 22px;
+    margin-right:3px;
+    border: 1px solid blue;
+    text-align: center;
+    display: inline-block;
+}
+#payment{
+    margin:0;
+    color: blue;
+}
+.icons{
+    margin-left: auto;
+}
+form span{
+    color: rgb(179, 179, 179);
+}
+form{
+    padding: 2vh 0;
+}
+input{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+input:focus::-webkit-input-placeholder
+{
+      color:transparent;
+}
+.header{
+    font-size: 1.5rem;
+}
+.left{
+    background-color: #ffffff;
+    padding: 2vh;   
+}
+.left img{
+    width: 2rem;
+}
+.left .col-4{
+    padding-left: 0;
+}
+.right .item{
+    padding: 0.3rem 0;
+}
+.right{
+    background-color: #ffffff;
+    padding: 2vh;
+}
+.col-8{
+    padding: 0 1vh;
+}
+.lower{
+    line-height: 2;
+}
+.btn.placeOrder{
+    background-color: rgb(23, 4, 189);
+    border-color: rgb(23, 4, 189);
+    color: white;
+    width: 100%;
+    font-size: 0.7rem;
+    margin: 4vh 0 1.5vh 0;
+    padding: 1.5vh;
+    border-radius: 0;
+}
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none; 
+}
+.btn:hover{
+    color: white;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+input[type=checkbox]{
+    width: unset;
+    margin-bottom: unset;
+}
+#cvv{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.575) , rgba(255, 255, 255, 0.541)), url("https://img.icons8.com/material-outlined/24/000000/help.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+} 
+#cvv:hover{
+
+}
+
+._success {
+    box-shadow: 0 15px 25px #00000019;
+    padding: 45px;
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    border-bottom: solid 4px #28a745;
+}
+
+._success i {
+    font-size: 55px;
+    color: #28a745;
+}
+
+._success h2 {
+    margin-bottom: 12px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+._success p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #495057;
+    font-weight: 500;
+}

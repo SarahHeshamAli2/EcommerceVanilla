@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<div class="signIn position-absolute top-0 end-0 bottom-0 start-0 d-flex justify-content-center align-items-center bg-opacity-25  bg-black d-none">
+    <h3>Please Sign In first</h3>
+</div>
+<div class="mainCont">
+    <div class="loadingScreen d-flex justify-content-center align-items-center position-fixed top-0 end-0 bottom-0 start-0 ">
+        <div class="loader "></div>
+       </div>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="assets/shopping-bag_16935431.png" alt="shop logo" class=" logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </button>
+                <ul class="dropdown-menu catg" aria-labelledby="dropdownMenuButton1">
+                  <li value="test"  title="beauty"><a class="dropdown-item" >beauty</a></li>
+                  <li title="fragrances"><a class="dropdown-item">fragrances</a></li>
+                  <li title="furniture"><a class="dropdown-item">furniture</a></li>
+                </ul>
+              </div>
+              <li class="nav-item">
+                <a href="cart.html">
+                    <button type="button" class="btn  position-relative notfBtn" >
+                     
+                    </button>
+                </a>
+            
+              </li>
+
+
+      
+           
+      
+           
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link logOutBtn" aria-current="page">Log Out</a>
+                  </li>
+            </ul>
+      
+          </div>
+        </div>
+      </nav>
+       
+          <header class="my-3 ">
+            <div class="container ">
+            <div class="row align-items-center position-relative g-2 justify-content-between" id="homeProductsRow">
+                </div>
+                <div class="alert alert-success productAddSucc d-none" >Product Added Successfully to cart</div>
+    
+              </div>
+    
+          </header>
+    
+    
+    
+    
+          <footer >
+            <div class="bg-black  p-3">
+                <div class="container">
+                    <div class="row cursorPointer">
+                        <div class="col-md-3">
+                            <div class="innerCol">
+                                <ul class="list-unstyled">
+                                    <li class="fw-bold">
+                                        Help
+                                    </li>
+                                    <li class="my-2">
+                                        Account
+                                    </li>
+                                    <li class="my-2">
+                                        Order Status
+                                    </li>
+                                    <li>
+                                        Return
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="innerCol">
+                                <ul class="list-unstyled">
+                                    <li class="fw-bold mt-2">
+                                        Offers
+                                    </li>
+                                    <li class="my-2">
+                                        Last Chance
+                                    </li>
+                                    <li class="my-2">
+                                        Sales
+                                    </li>
+                                    <li>
+                                       Loyalty Program
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="innerCol">
+                                <ul class="list-unstyled">
+                                    <li class="fw-bold  mt-2">
+                                        About Shoppy
+                                    </li>
+                                    <li class="my-2">
+                                        Our Company
+                                    </li>
+                                    <li class="my-2">
+                                        Careers
+                                    </li>
+                                    <li>
+                                        Investors
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="innerCol">
+                                <ul class="list-unstyled">
+                                    <li class="fw-bold  mt-2">
+                                        For bussiness
+                                    </li>
+                                    <li class="my-2">
+                                        Dealer Store
+                                    </li>
+                                    <li class="my-2">
+                                        Order Status
+                                    </li>
+                                    <li>
+                                        Developer Portal
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+           
+    
+                </div>
+    
+     
+            </div>
+            <div class="lowerRow bg-body-tertiary p-3">
+         <div class="container">
+            <div class="row  g-3">
+                <div class="col-md-3">
+                    <div class="innerColumn">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter mx-2"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="innerColumn">
+                        <a class="text-decoration-none">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="innerColumn">
+                        <a class="text-decoration-none">Terms Of Services</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="innerColumn">
+                        <a class="text-decoration-none">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+            </div>
+          </footer>
+</div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./javaScript/categories.js"></script>
+</body>
+</html>

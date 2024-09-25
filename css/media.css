@@ -1,0 +1,33 @@
+
+@media screen and (max-width:1200px){
+    .productImg {
+        height: auto;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    footer .bg-black .col-md-3 {
+        border-bottom: 1px solid #b4b2b2;
+    }
+    footer .bg-black .col-md-3:nth-child(4) {
+        border-bottom: unset;
+    }
+
+.cartImg  {
+    width: 85% !important;
+}
+#cartRow .d-flex {
+    display: block !important;
+}
+}
+
+
+@media screen and (max-width: 572px) {
+
+
+
+
+}
