@@ -191,7 +191,6 @@ let cartItemsCount = document.querySelector('.cartItemsCount')
             
         for(let i =0 ; i < res.length ; i++) {
             totalPriceAfterDeleteItem += Number(res[i].productPrice)
-            console.log(res[i].productPrice);
             
         
         }

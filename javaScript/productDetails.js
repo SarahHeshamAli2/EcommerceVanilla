@@ -18,7 +18,6 @@ async function getSingleProduct() {
       prod = myFinalProducts
      
       reviews = prod.reviews
-    console.log(prod);
           prodImages = prod.images
       
     loadScreen.classList.add('d-none')

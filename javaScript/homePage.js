@@ -158,14 +158,12 @@ setTimeout(() => {
     productAddedSucc.classList.add('d-none')
 
 }, 2000);
-    console.log(addedToCart);
     
     localStorage.setItem('cartProducts',JSON.stringify(addedToCart))
   
     uniqueArray = JSON.parse(localStorage.getItem('cartProducts'))
     res = Array.from(new Set(uniqueArray.map(JSON.stringify)))
     .map(JSON.parse)
-    console.log(res.length);
     notfBtn.innerHTML = `         
     <i class="fa-solid fa-cart-shopping">
      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
