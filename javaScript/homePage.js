@@ -209,10 +209,17 @@ let catgLi = document.querySelectorAll('.catg li')
 
 
 
+
 for(let i =0 ; i < catgLi.length ;i++){
     catgLi[i].addEventListener('click', function(e){
-        window.location.href = `file:///C:/ecommerceVanillaJs/categories.html?${e.target.innerHTML}`;
+                if (         window.location.href == "file:///C:/ecommerceVanillaJs/home.html"
+        ) {
+            window.location.href = `file:///C:/ecommerceVanillaJs/categories.html?${e.target.innerHTML}`;        }
+        else {
+
+            window.location.href = 'https://sarahheshamali2.github.io/EcommerceVanilla/home'
+        }
+        window.location.href = `https://sarahheshamali2.github.io/EcommerceVanilla/home?${e.target.innerHTML}`;
 
     })
 }
-
