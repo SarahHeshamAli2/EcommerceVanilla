@@ -163,7 +163,15 @@ function logOut() {
     localStorage.removeItem('user')
     
     setTimeout(() => {
-        window.location.href = "file:///C:/ecommerceVanillaJs/index.html";
+        if (         window.location.href == "file:///C:/ecommerceVanillaJs/home.html"
+        ) {
+            window.location.href = "file:///C:/ecommerceVanillaJs/index.html"
+        }
+        else {
+    
+            window.location.href = 'https://sarahheshamali2.github.io/EcommerceVanilla/index'
+        }
+    
     
      }, 2000);
     

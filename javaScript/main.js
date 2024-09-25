@@ -157,5 +157,3 @@ else {
 
 
 
-
-    console.log(window.location.href);
